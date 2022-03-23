@@ -26,8 +26,10 @@
 ;;; Fonts
 ;; Custom fonts can be set in ~/.emacs.d/private.el
 
-(defvar +font-wide-family "PxPlus IBM VGA 8x16")
-(defvar +font-tall-family "PxPlus IBM VGA 9x14")
+;(defvar +font-wide-family "PxPlus IBM VGA 8x16")
+;(defvar +font-tall-family "PxPlus IBM VGA 9x14")
+(defvar +font-wide-family "PxPlus IBM VGA8")
+(defvar +font-tall-family "PxPlus IBM VGA8")
 (defvar +font-unicode-family "Unifont")
 (defvar +fixed-pitch-family "Unifont")
 (defvar +variable-pitch-family "Unifont")

@@ -116,7 +116,7 @@
 
 (setq
  org-roam-directory
- (let ((p (expand-file-name "~/Org")))
+ (let ((p (expand-file-name "~/org")))
    (unless (file-directory-p p) (make-directory p))
    p)
 

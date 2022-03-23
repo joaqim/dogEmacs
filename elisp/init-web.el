@@ -2,6 +2,7 @@
 
 (straight-use-package 'web-mode)
 (straight-use-package 'emmet-mode)
+(straight-use-package '(lsp-tailwindcss :type git :host github :repo "merrickluo/lsp-tailwindcss"))
 
 (+pdump-packages 'web-mode
                  'emmet-mode)

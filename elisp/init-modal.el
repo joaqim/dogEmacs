@@ -46,7 +46,7 @@
    ;; toggles
    '("L" . display-line-numbers-mode)
    '("S" . smartparens-strict-mode)
-   '("t" . telega)
+   ;'("t" . telega)
    '("P" . pass)
    '("R" . org-roam-mode)
    '("A" . org-agenda)

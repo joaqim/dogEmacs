@@ -11,7 +11,7 @@
 (+pdump-packages 'selectrum
                  'selectrum-prescient
                  'company
-                 'deadgrep
+                 ;;'deadgrep
                  'prescient
                  'yasnippet)
 
