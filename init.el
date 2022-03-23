@@ -29,3 +29,4 @@
 (require 'init-server)
 (unless window-system
   (require 'init-xterm))
+(require 'init-elfeed)
