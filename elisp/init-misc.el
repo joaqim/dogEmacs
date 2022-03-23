@@ -1,6 +1,6 @@
 (straight-use-package 'dumb-jump)
 (straight-use-package 'highlight-numbers)
-(straight-use-package 'eldoc-overlay)
+;(straight-use-package 'eldoc-overlay)
 
 (add-hook 'prog-mode-hook 'highlight-numbers-mode)
 

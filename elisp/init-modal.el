@@ -2,6 +2,16 @@
 
 (straight-use-package 'meow)
 
+(defun meow-insert-right ()
+  (interactive)
+  (meow-right)
+  (meow-insert))
+
+(defun meow-negative-find ()
+  (interactive)
+  (let ((current-prefix-arg -1))
+    (call-interactively 'meow-find)))
+
 (defun meow-setup ()
   ;; Programmer Dvorak layout on ansi keyboard
   (setq meow-cheatsheet-physical-layout meow-cheatsheet-physical-layout-ansi
@@ -46,7 +56,7 @@
    ;; toggles
    '("L" . display-line-numbers-mode)
    '("S" . smartparens-strict-mode)
-   '("T" . telega)
+   ;'("t" . telega)
    '("P" . pass)
    '("A" . org-agenda)
    '("D" . docker)
@@ -106,11 +116,13 @@
    '("e" . meow-line)
    '("E" . meow-goto-line)
    '("f" . meow-find)
+   '("F" . meow-negative-find)
    '("g" . meow-cancel-selection)
    '("G" . meow-grab)
    '("h" . meow-left)
    '("H" . meow-left-expand)
    '("i" . meow-insert)
+   '("/" . meow-insert-right)
    '("I" . meow-open-above)
    '("j" . meow-join)
    '("k" . meow-kill)

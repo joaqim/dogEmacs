@@ -23,13 +23,19 @@
 ;;; Fonts
 ;; Custom fonts can be set in ~/.emacs.d/private.el
 
-(defvar +font-family "Source Code Pro")
-(defvar +line-font-family "Source Code Pro")
-(defvar +font-unicode-family "LXGW WenKai")
-(defvar +fixed-pitch-family "Sarasa Mono SC")
-(defvar +variable-pitch-family "LXGW WenKai")
-(defvar +font-size-list '(10 11 12 13 14 15 16 17 18))
-(defvar +font-size 10)
+;(defvar +font-wide-family "PxPlus IBM VGA 8x16")
+;(defvar +font-tall-family "PxPlus IBM VGA 9x14")
+(defvar +font-wide-family "PxPlus IBM VGA8")
+(defvar +font-tall-family "PxPlus IBM VGA8")
+(defvar +font-unicode-family "Unifont")
+(defvar +fixed-pitch-family "Unifont")
+(defvar +variable-pitch-family "Unifont")
+(defvar +font-wide-or-tall 'tall)
+(defvar +font-size-list '(12 13 14 15 16 17 18))
+(defvar +font-size 12)
+
+(defun +get-base-font ()
+  (if (eq 'tall +font-wide-or-tall) +font-tall-family +font-wide-family))
 
 (defun +load-base-font ()
   (let* ((font-spec (format "%s-%d" +font-family +font-size)))
