@@ -7,6 +7,17 @@
   (meow-right)
   (meow-insert))
 
+
+(defun meow-insert-after-cursor ()
+  (interactive)
+  (if meow--temp-normal
+      (progn
+        (message "Quit temporary normal mode")
+        (meow--switch-state 'motion))
+    (meow--cancel-selection)
+    (meow-right)
+    (meow--switch-state 'insert)))
+
 (defun meow-negative-find ()
   (interactive)
   (let ((current-prefix-arg -1))
@@ -122,7 +133,7 @@
    '("h" . meow-left)
    '("H" . meow-left-expand)
    '("i" . meow-insert)
-   '("/" . meow-insert-right)
+   '("/" . meow-insert-after-cursor)
    '("I" . meow-open-above)
    '("j" . meow-join)
    '("k" . meow-kill)
