@@ -2,12 +2,12 @@
 
 (straight-use-package 'vertico)
 (straight-use-package 'orderless)
+(straight-use-package 'marginalia)
 (straight-use-package 'company)
 (straight-use-package 'company-posframe)
 (straight-use-package 'rg)
 (straight-use-package 'prescient)
 (straight-use-package 'yasnippet)
-(straight-use-package 'marginalia)
 
 (defun +complete ()
   (interactive)
@@ -112,7 +112,8 @@
   (require 'orderless)
   (setq orderless-skip-highlighting t)
   (add-hook 'minibuffer-setup-hook '+vertico-init-minibuffer)
-  (define-key minibuffer-mode-map (kbd "M-DEL") #'+backward-delete-sexp))
+  ;(define-key minibuffer-mode-map (kbd "M-DEL") #'+backward-delete-sexp)
+  )
 
 ;;; rg
 
