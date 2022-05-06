@@ -1,4 +1,4 @@
-;(straight-use-package 'atom-one-dark-theme)
+(straight-use-package 'atom-one-dark-theme)
 
 (setq +font-family "JetBrains Mono"
        +font-unicode-family "JetBrains Mono"
@@ -9,5 +9,5 @@
        ;;+variable-pitch-family "Inter"
        ;;+fixed-pitch-family "Sarasa Mono SC"
        +font-size 10
-       +theme-list '(joker))
-       ;+theme-list '(atom-one-dark))
+       ;+theme-list '(atom-one-dark joker))
+       +theme-list '(atom-one-dark))

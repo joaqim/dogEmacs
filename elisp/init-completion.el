@@ -112,8 +112,8 @@
   (require 'orderless)
   (setq orderless-skip-highlighting t)
   (add-hook 'minibuffer-setup-hook '+vertico-init-minibuffer)
-  ;(define-key minibuffer-mode-map (kbd "M-DEL") #'+backward-delete-sexp)
-  )
+  ;; https://lists.gnu.org/archive/html//help-gnu-emacs/2006-03/msg00609.html
+  (local-set-key (kbd "M-DEL") #'+backward-delete-sexp))
 
 ;;; rg
 
