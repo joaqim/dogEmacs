@@ -2,12 +2,12 @@
 
 (straight-use-package 'vertico)
 (straight-use-package 'orderless)
+(straight-use-package 'marginalia)
 (straight-use-package 'company)
 (straight-use-package 'company-posframe)
 (straight-use-package 'rg)
 (straight-use-package 'prescient)
 (straight-use-package 'yasnippet)
-(straight-use-package 'marginalia)
 
 (defun +complete ()
   (interactive)

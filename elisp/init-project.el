@@ -10,8 +10,8 @@
 (require 'project)
 
 ;(with-eval-after-load "project"
-  ;(define-key project-prefix-map "m" 'magit-status)
-  ;(define-key project-prefix-map "s" 'shell))
+  ;(define-key project-prefix-map (kbd "m") 'magit-status)
+  ;(define-key project-prefix-map (kbd "s") 'shell))
 
 (defun +project-previous-buffer (arg)
   "Toggle to the previous buffer that belongs to current project."

@@ -1,4 +1,4 @@
-(require 'init-font)
+;(require 'init-font)
 (require 'init-modal)
 (require 'init-project)
 (require 'init-edit)
@@ -13,6 +13,7 @@
 (require 'init-markdown)
 (require 'init-git)
 (require 'init-org)
+(require 'init-org-brain)
 (require 'init-completion)
 ;(require 'init-pass)
 ;(require 'init-rime)
