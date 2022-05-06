@@ -13,9 +13,9 @@
  frame-inhibit-implied-resize t
  initial-scratch-message ""
  hl-line-sticky-flag t
- ;; prefer horizental split
+ ;; prefer vertical split
  split-height-threshold nil
- split-width-threshold 120
+ split-width-threshold 0
  ;; don't create lockfiles
  create-lockfiles nil
  ;; UTF-8
